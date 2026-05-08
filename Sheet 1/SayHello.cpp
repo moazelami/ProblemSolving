@@ -7,4 +7,4 @@ int main()
     cin >> name;
     cout << "Hello, " << name;
     return 0;
-}
+} 
