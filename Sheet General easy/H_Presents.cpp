@@ -12,11 +12,16 @@ int main()
     int size;
     cin >> size;
     int *arr = new int[size];
-    int *all = new int[size];
-    for (size_t i = 0; i < size; i++)
+    int *all = new int[101];
+    for (size_t i = 1; i <= size; i++)
     {
         cin >> arr[i];
-        all[i] = i+1;
+        all[arr[i]] = i;
+    }
+    
+    for (size_t i = 1; i <= size; i++)
+    {
+        cout << all[i] << " ";
     }
     
     
